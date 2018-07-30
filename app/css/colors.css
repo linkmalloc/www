@@ -221,4 +221,5 @@ input.switch-toggle-round:checked + label:before,
 @media only screen and (max-width: 767px) {
 
 	.portfolio-filter li a:hover { color: #00acc1; }
-.}
+}
+

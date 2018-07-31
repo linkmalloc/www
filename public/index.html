@@ -208,7 +208,7 @@
 							<div class="slider-bottom-box">
 								<div class="row align-items-center clearfix">
 									<div class="col-lg-4 mb-3 mb-lg-0">
-										<h2 class="mb-3 h1 text-rotater t300" data-separator="," data-rotate="fadeIn" data-speed="1500">Your <span class="t-rotate">Coffeeshop,Restaurant,Petshop,Franchise,Condominium,Real Estate Firm,Brokerage,Law Firm,Construction Firm,Clinic,Business,Company,</span> Online</h2>
+										<h2 class="mb-3 h1 text-rotater t300" data-separator="," data-rotate="fadeIn" data-speed="1500">Your <span class="t-rotate">Coffeeshop,Restaurant,Petshop,Franchise,Real Estate Firm,Brokerage,Law Firm,Construction Firm,Clinic,Business,Company</span> Online</h2>
 										<p class="t400 text-muted mb-0">We help SMEs bring their business to the internet. What are the benefits of having your business online?</p>
 									</div>
 									<div class="col-lg-4 col-sm-6">
@@ -307,23 +307,22 @@
 									<p class="mb-0">Competently recaptiualize multifunctional schemas without an expanded array of niches. Continually engage cooperative.</p>
 								</div>
 							</div>
-							<div class="col-md-6 mt-4 mt-lg-0">
+							<div id="domain-search" class="col-md-6 mt-4 mt-lg-0">
 								<div class="input-group input-group-lg">
-									<input type="text" class="form-control" placeholder="Your New Domain Name" aria-label="Enter Domain Name">
+									<input type="text" class="field form-control" placeholder="Your New Domain Name" aria-label="Enter Domain Name">
 									<div class="input-group-append">
 										<select class="custom-select" id="inputGroupSelect01">
 											<option value="com" selected>.com</option>
 											<option value="org">.org</option>
 											<option value="net">.net</option>
 											<option value="info">.info</option>
-											<option value="us">.us</option>
+											<option value="ph">.ph</option>
 										</select>
 									</div>
 									<div class="input-group-append">
 										<button class="btn bgcolor text-white dark">Search</button>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -845,6 +844,17 @@
 
 		jQuery(window).on( 'load', function(){
 			$('#hotspot-img').hotSpot();
+		});
+
+		jQuery('#domain-search .btn').on('click', function(e){
+			e.preventDefault(); 
+			var domainLink = 'https://domains.google.com/m/registrar/search?hl=en&searchTerm=';
+			var value = $('#domain-search .field').val();
+			var tld = $('#domain-search .custom-select').val();
+
+			var url = domainLink + value + '.' + tld;
+
+			window.open(url,'_blank');					
 		});
 	</script>
 

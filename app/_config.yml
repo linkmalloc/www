@@ -20,9 +20,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Our mission is to bring each small business an online presence. Through our services,
   we can improve businesses locally and internationally with Apps and Websites.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://linkmalloc.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: linkmalloc
 github_username:  linkmalloc
+
+fb_app_id: 319503135454799
 
 # Build settings
 markdown: kramdown

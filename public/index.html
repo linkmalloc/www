@@ -839,6 +839,14 @@
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
+	<script>
+		if('serviceWorker' in navigator){
+			window.addEventListener('load', ()=>{
+				navigator.serviceWorker.register('/sw.js');
+			});
+		}
+	</script>
+
 	<!-- External JavaScripts
 	============================================= -->
 	<script src="/js/jquery.js"></script>

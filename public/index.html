@@ -840,7 +840,7 @@
 	<div id="gotoTop" class="icon-angle-up"></div>
 
 	<script>
-		if('serviceWorker' in navigator){
+		if('serviceWorker' in navigator && 'PushManager' in window){
 			window.addEventListener('load', ()=>{
 				navigator.serviceWorker.register('/sw.js');
 			});

@@ -1,52 +1,126 @@
 {
   "name": "Link Malloc, Inc",
-  "short_name": "Link Malloc",
+  "short_name": "LinkMalloc",
   "theme_color": "#00acc1",
   "background_color": "#00acc1",
-  "display": "browser",
+  "display": "standalone",
   "Scope": "/",
   "start_url": "/",
   "icons": [
-    {
-      "src": "images/icons/icon-72x72.png",
-      "sizes": "72x72",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/icon-128x128.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/icon-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/icon-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+      {
+          "src": "/images/images/icons/icon-72x72.png",
+          "sizes": "72x72",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/images/icons/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/images/icons/icon-128x128.png",
+          "sizes": "128x128",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/images/icons/icon-144x144.png",
+          "sizes": "144x144",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/images/icons/icon-152x152.png",
+          "sizes": "152x152",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/images/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/images/icons/icon-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/images/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/27456271-2fb2-a6d5-7a21-8d0f4510b293.webPlatform.png",
+          "sizes": "44x44",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/60bbedb6-3409-a088-3a6f-eccaec9d28ff.webPlatform.png",
+          "sizes": "48x48",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/2b5bce43-8503-4d53-27c6-d5db7fb53c73.webPlatform.png",
+          "sizes": "1240x600",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/0ce15a34-378a-bcab-f977-dcb0c90a29cd.webPlatform.png",
+          "sizes": "300x300",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/42773c34-e112-c64f-7a21-9c876b43eaa8.webPlatform.png",
+          "sizes": "150x150",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/b99d2212-8b10-dec9-92d5-1530ebd94cdb.webPlatform.png",
+          "sizes": "88x88",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/7cb7dce7-0d69-dc09-0cd5-e928094f6a5a.webPlatform.png",
+          "sizes": "24x24",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/53dbe7a5-04a9-a7b0-7862-98e25460cc61.webPlatform.png",
+          "sizes": "50x50",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/71bbc7dd-d473-0b4c-02c6-a1b52a9300a8.webPlatform.png",
+          "sizes": "620x300",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/c2129fb8-5df3-a0be-b707-07581ffe2ac8.webPlatform.png",
+          "sizes": "36x36",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/817ddee6-7e2f-881e-188e-20852e2e6dfa.webPlatform.png",
+          "sizes": "1024x1024",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/2c023ba5-341a-5a89-7af8-fe0e4ee114ef.webPlatform.png",
+          "sizes": "180x180",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/90616f02-fde8-92ed-fb0c-06bd6b18689d.webPlatform.png",
+          "sizes": "120x120",
+          "type": "image/png"
+      },
+      {
+          "src": "/images/a9fb0e0d-4ad0-4d13-6407-01870cd460db.webPlatform.png",
+          "sizes": "76x76",
+          "type": "image/png"
+      }
   ],
-  "splash_pages": null
+  "splash_pages": null,
+  "lang": "English",
+  "orientation": "portrait",
+  "description": "We help you bring your business online. Leverage the Power of the Internet.",
+  "scope": "/"
 }

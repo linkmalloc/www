@@ -2,7 +2,7 @@
   "name": "Link Malloc, Inc",
   "short_name": "LinkMalloc",
   "theme_color": "#00acc1",
-  "background_color": "#00acc1",
+  "background_color": "#ffffff",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",

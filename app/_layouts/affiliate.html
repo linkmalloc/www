@@ -17,7 +17,7 @@
         if ("ga" in window) {
         tracker = ga.getAll()[0];
         if (tracker)
-            tracker.send("event", "Affiliate", "redirect",'{{ page.name }}',{
+            tracker.send("event", "Affiliate", "redirect",'{{ page.label }}',{
                 hitCallback: function() {
                 window.location.href = '{{ page.link }}';
                 clearInterval(pinger);

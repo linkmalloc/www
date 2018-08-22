@@ -101,8 +101,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="/index.html" class="standard-logo" data-dark-logo="/images/logo-dark.png"><img src="/images/logo.png" alt="Link Malloc, Inc. Logo"></a>
-						<a href="/index.html" class="retina-logo" data-dark-logo="/images/logo-dark@2x.png"><img src="/images/logo@2x.png" alt="Link Malloc, Inc. Logo"></a>
+						<a href="/" class="standard-logo" data-dark-logo="/images/logo-dark.png"><img src="/images/logo.png" alt="Link Malloc, Inc. Logo"></a>
+						<a href="/" class="retina-logo" data-dark-logo="/images/logo-dark@2x.png"><img src="/images/logo@2x.png" alt="Link Malloc, Inc. Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -842,7 +842,29 @@
 	<script>
 		if('serviceWorker' in navigator && 'PushManager' in window){
 			window.addEventListener('load', ()=>{
-				navigator.serviceWorker.register('/sw.js');
+				navigator.serviceWorker.register('/sw.js')
+					.then(swReg =>{
+						const swRegistration = swReg;
+					})
+					.catch(e =>{
+						console.log('could not reg service worker', e);
+					});
+			});
+		}
+
+		function initializeUI() {
+			// Set the initial subscription value
+			swRegistration.pushManager.getSubscription()
+			.then(function(subscription) {
+				isSubscribed = !(subscription === null);
+
+				if (isSubscribed) {
+				console.log('User IS subscribed.');
+				} else {
+				console.log('User is NOT subscribed.');
+				}
+
+				updateBtn();
 			});
 		}
 	</script>

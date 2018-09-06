@@ -3,6 +3,13 @@
 {% else %} 
   {% assign title = "Link Malloc, Inc." %} 
 {% endif %}
+{% if include.description %} 
+  {% assign description = include.description %} 
+{% else %} 
+  {% assign description = "We help you build your website. Reach more customers through the internet. We are bringing over 10 years of experience in web application development and CRM. " %} 
+{% endif %}
+<title>{{ title }}</title>
+<link rel="canonical" href="https://linkmalloc.com{{ page.url }}" />
 <meta name="description" content="{{ include.description }}">
 <meta name="keywords" content="{{ include.keywords }}">
 <meta property="og:title" content="{{ title }}" />

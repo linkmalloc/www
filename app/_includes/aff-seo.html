@@ -8,14 +8,11 @@
 {% else %} 
   {% assign description = "We help you build your website. Reach more customers through the internet. We are bringing over 10 years of experience in web application development and CRM. " %} 
 {% endif %}
-
 {% if include.description %} 
   {% assign keywords = include.keywords %} 
 {% else %} 
   {% assign keywords = "cebu, cebu website maker, cebu web developer, web developer in cebu, philippine web developer " %} 
 {% endif %}
-
-
 {% if include.image_url %} 
   {% assign image_url = include.image_url %} 
 {% else %} 
@@ -26,9 +23,6 @@
 {% else %} 
   {% assign image_url_secure = "https://linkmalloc.com/images/seo/ogp.jpg" %} 
 {% endif %}
-
-
-
 <title>{{ title }}</title>
 <link rel="canonical" href="https://linkmalloc.com{{ page.url }}" />
 <meta name="description" content="{{ description }}">

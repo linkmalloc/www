@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="dns-prefetch" href="//s3.envato.com" />
+    {% include aff-seo.html 
+        description=page.description
+        keywords=page.keywords
+        title=page.title
+        image_url=page.image_url
+    %}
 
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ page.title }}</title>

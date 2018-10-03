@@ -23,8 +23,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://linkmalloc.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: linkmalloc
 github_username:  linkmalloc
-messenger_link: http://m.me/435455936960832
-
+messenger_link: https://m.me/435455936960832
+services: https://linkmalloc.com/go/services
+shop: https://linkmalloc.com/go/shop
 fb_app_id: 319503135454799
 
 # Build settings

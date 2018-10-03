@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="//s3.envato.com" />
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="&amp;lt;a href=&amp;quot;http://themerex.ticksy.com/&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://themerex.net/wp-co...">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" media="all" href="/portfolio/assets/core.css" />
+    <link rel="stylesheet" media="all" href="/portfolio/assets/index.css" />
+
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-72x72-precomposed.png"
+        sizes="72x72" />
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-114x114-precomposed.png"
+        sizes="114x114" />
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-144x144-precomposed.png"
+        sizes="144x144" />
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-precomposed.png" />
+
+    <script src="https://public-assets.envato-static.com/assets/market/pages/full_screen_preview/index-58946df87e9876e43df3b356958c61872794777f3aed5f8ff743428fbb717696.js"></script>
+
+    <script>
+        //function to fix height of iframe!
+        var calcHeight = function () {
+            var headerDimensions = $('.preview__header').height();
+            $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+        }
+
+        $(document).ready(function () {
+            calcHeight();
+        });
+
+        $(window).resize(function () {
+            calcHeight();
+        }).load(function () {
+            calcHeight();
+        });
+    </script>
+
+    {% include analytics.html %}
+
+
+</head>
+
+<body class="full-screen-preview">
+
+    <div class="preview__header" data-view="ctaHeader">
+
+        <div class="preview__lm-logo">
+            <a href="https://themeforest.net/item/hot-coffee-cafe-restaurant-bar-theme/15103849">Envato Market</a>
+        </div>
+
+        <div class="preview__actions">
+            <div class="preview__action--buy">
+                <a class="e-btn--3d -color-primary" href="{{ page.shop_buy_url }}">Buy
+                    now</a>
+            </div>
+
+        </div>
+    </div>
+
+    <iframe class="full-screen-preview__frame" src="{{ page.product_url }}" name="preview-frame" frameborder="0"
+        noresize="noresize" data-view="fullScreenPreview">
+    </iframe>
+
+
+    <script>$(function () { viewloader.execute(Views); });</script>
+
+    
+
+
+
+
+</body>
+
+</html>

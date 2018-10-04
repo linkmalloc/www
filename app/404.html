@@ -74,7 +74,7 @@
       <h4>Ooopps.! The Page you were looking for, couldn't be found.</h4>
       <span>Try the search below to find matching pages:</span>
       </div>
-      <form action="#" method="get" role="form" class="divcenter nobottommargin">
+      <form id="search-form" action="#" method="get" role="form" class="divcenter nobottommargin">
       <div class="input-group input-group-lg">
       <input id="search-value" type="text" class="form-control" placeholder="Search for Pages...">
       <div class="input-group-append">
@@ -113,7 +113,7 @@
 	<script src="/js/functions.js"></script>
 
 	<script>
-		jQuery('#search').on('click', function(e){
+		jQuery('#search-form').on('submit', function(e){
 			e.preventDefault(); 
 			var domainLink = 'https://www.google.com/search?as_sitesearch=www.linkmalloc.com&search=&q=';
 			var value = $('#search-value').val();

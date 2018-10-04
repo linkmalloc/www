@@ -968,6 +968,79 @@
 			window.open(url,'_blank');					
 		});
 	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123171206-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123171206-1');
+
+  
+  function handleOutboundLinkClicks(e) {
+     var event = window.event;
+     event.preventDefault();
+     if ("ga" in window) {
+        tracker = ga.getAll()[0];
+        if (tracker)
+            tracker.send("event", "Engagement", "click",{
+                hitCallback: function() {
+                  window.location.href = event.target.href;
+                }
+              });
+      }
+    }
+  function handleDirectClicks(e) {
+     var event = window.event;
+     event.preventDefault();
+     if ("ga" in window) {
+        tracker = ga.getAll()[0];
+        if (tracker)
+            tracker.send("event", "Direct Contact", e ,{
+                hitCallback: function() {
+                  setTimeout(function() {
+                    window.location = event.target.href;
+                  }, 500);
+                }
+              });
+      }
+    }
+  var fbMessengerBtns = document.getElementsByClassName("fb-messenger");
+  Array.prototype.forEach.call(fbMessengerBtns, function(el) {
+    el.setAttribute('onclick', 'handleOutboundLinkClicks()');
+  });
+
+  var telBtn = document.getElementsByClassName("tel-btn");
+  Array.prototype.forEach.call(telBtn, function(el) {
+    el.setAttribute('onclick', 'handleDirectClicks("dial-num")');
+  });
+
+  var emailBtn = document.getElementsByClassName("email-btn");
+  Array.prototype.forEach.call(emailBtn, function(el) {
+    el.setAttribute('onclick', 'handleDirectClicks("sending-email")');
+  });
+
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '729985667100309');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=729985667100309&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
+
 
 </body>
 </html>
